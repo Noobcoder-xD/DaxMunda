@@ -7,29 +7,29 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps.
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "24876754"))
+API_HASH = getenv("API_HASH", "cf9ced398855baadcb5b14abedd8a9c2")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7346998885:AAGowsrNRr0uYRppWjZhAR3QKhwAiVvahgI")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","sanatanisynax")
+OWNER_USERNAME = getenv("OWNER_USERNAME","")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "MusicxKhushiBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "H4RDIN_MUSlC_BOT")
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "KhushiMusic")
+BOT_NAME = getenv("BOT_NAME" , "H4RDINMUSIC")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "KhushiAssistant")
+ASSUSERNAME = getenv("ASSUSERNAME" , "H4RDIN_ASSlSTANT")
 EVALOP = list(map(int, getenv("EVALOP", "1808943146 5360305806 6664582540 6050277919").split()))
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://bikash:bikash@bikash.3jkvhp7.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1001919135283))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002132563882"))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6664582540))
+OWNER_ID = int(getenv("OWNER_ID", "7058025496"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,15 +39,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com",
+    "https://github.com/Noobcoder-xD/DaxMunda",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/synaxnetwork")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/synaxchatgroup")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/CU_Music_Project")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/CU_Music_Project")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
@@ -69,7 +69,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 5242880000))
 
 
 # Ge@STRINGSEASO_NBOT2 session from @STRINGSEASO_NBOT
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BADNvmIAK1ezQsqTUYqRfzfO3I_lIm_W8UDKAkoS2lH4jp3GQNPW1DUVODwUDMVjfO0IHhMNnV40imPOUKwUEQ7IZT4Nl0ZzGqmVuubKkebFg66ZfJiC2uhwbxgubfr_tGiZ1W1X93zAb8pxkXjXfDsPwH4g-ICt9KFzi-jjlB2REhOR8E4xpXT_IBVDqoL1-I1hUXJeUJs9nRpE6t5R0ITZ63WWeGQBxgZmrsLWqW7tsHW941HvEzBnGyOGF6NFTg38KR0qquPai0hYIQAugApKPCknrRNKJ2ukNG7aeFhlpt25nQhyZybgt1zLe7dzVDGFoiCiCmIk9M3PxHQlXXunw7Mc-gAAAAF60z7MAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
